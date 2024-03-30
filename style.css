@@ -3,18 +3,14 @@
     flex-wrap: wrap;
     max-width: 800px; /* Adjust the maximum width as needed */
     margin: 0 auto; /* Center the container */
-    color:orange;
-    
+    color: orange;
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
-    
-  }
-  
-  .card {
-    border:2px solid rgb(255, 183, 49);
-    display: flex;
-    width: calc(25% - 20px); /* 25% width with margin */
-    height: 10px;
+}
+
+.card {
+    border: 2px solid rgb(255, 183, 49);
+    width: calc(25% - 20px); /* 25% width with margin for medium screens */
     margin: 10px;
     background-color: #f0f0f0;
     border-radius: 8px;
@@ -22,35 +18,51 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
-  }
-  .card:hover {
+}
+
+/* Adjust card width for smaller screens */
+@media screen and (max-width: 600px) {
+    .card {
+        width: calc(100% - 20px); /* 100% width with margin for small screens */
+    }
+}
+
+.card:hover {
     background-color: #e0e0e0; /* Change background color on hover */
     transform: scale(1.05); /* Scale the card slightly on hover */
-  }
-  
-  .card h2 {
+}
+
+.card h2 {
     margin-top: 0;
-  }
-  
-  .card p {
+}
+
+.card p {
     margin-bottom: 0;
-  }
-  
-  .card .card-header {
+}
+
+.card .card-header {
     display: flex;
     align-items: center;
-  }
+}
 
-  .card .card-header .card-image {
+.card .card-header .card-image {
     width: 40px; /* Set custom width */
     height: 30px; /* Set custom height */
     margin-right: 10px; /* Add margin between image and title */
-  }
-  
-  .card .card-header .card-title {
+}
+
+.card .card-header .card-title {
     margin: 0; /* Remove margin */
-  }
-  
-  .card .card-content {
+}
+
+.card .card-content {
     margin-top: 10px; /* Add margin between title and content */
-  }
+}
+
+/* Stack cards vertically on small screens */
+@media screen and (max-width: 600px) {
+    .card {
+        width: calc(100% - 20px); /* 100% width with margin for small screens */
+        margin: 10px 0; /* Adjust margin to separate cards vertically */
+    }
+}
