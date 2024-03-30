@@ -1,7 +1,7 @@
 const cardData = [
     { title: "NIMCET", content:"", link: "https://maarula.in/nimcet-maarula/", imageUrl: "nim.png" },
     { title: "CUET-PG", content:"",link: "https://maarula.in/cuet-pg-maarula/", imageUrl: "image2.png" },
-    { title: "JAAMIA", content:"", link: "https://maarula.in/jamia-maarula/",imageUrl: "jaamiaa.png" },
+    { title: "JAMIA", content:"", link: "https://maarula.in/jamia-maarula/",imageUrl: "jaamiaa.png" },
     // Add more data objects as needed
   ];
   
