@@ -11,7 +11,7 @@
   }
   
   .card {
-    border:2px solid rgb(211, 148, 31);
+    border:2px solid rgb(255, 183, 49);
     display: flex;
     width: calc(25% - 20px); /* 25% width with margin */
     height: 10px;
