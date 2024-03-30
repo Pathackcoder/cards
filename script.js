@@ -1,7 +1,7 @@
 const cardData = [
-    { title: "NIMCET", content:"", imageUrl: "nim.png" },
-    { title: "CUET-PG", content:"", imageUrl: "image2.png" },
-    { title: "JAAMIA", content:"", imageUrl: "jaamiaa.png" },
+    { title: "NIMCET", content:"", link: "https://maarula.in/nimcet-maarula/", imageUrl: "nim.png" },
+    { title: "CUET-PG", content:"",link: "https://maarula.in/cuet-pg-maarula/", imageUrl: "image2.png" },
+    { title: "JAAMIA", content:"", link: "https://maarula.in/jamia-maarula/",imageUrl: "jaamiaa.png" },
     // Add more data objects as needed
   ];
   
@@ -12,6 +12,7 @@ const cardData = [
     card.classList.add("card");
     card.innerHTML = `
       <div class="card-header">
+      <a href="${data.link}" target="_blank">
         <img src="${data.imageUrl}" alt="${data.title}" class="card-image">
         <h2 class="card-title">${data.title}</h2>
       </div>
