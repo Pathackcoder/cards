@@ -3,15 +3,18 @@
     flex-wrap: wrap;
     max-width: 800px; /* Adjust the maximum width as needed */
     margin: 0 auto; /* Center the container */
-    font-family: "Roboto Slab", serif;
+    color:orange;
+    
+    font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
     
   }
   
   .card {
-    
+    border:2px solid rgb(211, 148, 31);
+    display: flex;
     width: calc(25% - 20px); /* 25% width with margin */
-    height: 50px;
+    height: 10px;
     margin: 10px;
     background-color: #f0f0f0;
     border-radius: 8px;
@@ -33,3 +36,21 @@
     margin-bottom: 0;
   }
   
+  .card .card-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .card .card-header .card-image {
+    width: 40px; /* Set custom width */
+    height: 30px; /* Set custom height */
+    margin-right: 10px; /* Add margin between image and title */
+  }
+  
+  .card .card-header .card-title {
+    margin: 0; /* Remove margin */
+  }
+  
+  .card .card-content {
+    margin-top: 10px; /* Add margin between title and content */
+  }
