@@ -9,7 +9,7 @@
 }
 
 .card {
-    border: 2px solid rgb(255, 183, 49);
+    border: 2px solid black;
     width: calc(25% - 20px); /* 25% width with margin for medium screens */
     margin: 10px;
     background-color: #f0f0f0;
