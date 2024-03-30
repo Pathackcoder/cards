@@ -1,7 +1,7 @@
 const cardData = [
-    { title: "NIMCET", content:"", imageUrl: "image3.png" },
+    { title: "NIMCET", content:"", imageUrl: "nim.png" },
     { title: "CUET-PG", content:"", imageUrl: "image2.png" },
-    { title: "JAAMIA", content:"", imageUrl: "image1.png" },
+    { title: "JAAMIA", content:"", imageUrl: "jaamiaa.png" },
     // Add more data objects as needed
   ];
   
