@@ -9,7 +9,7 @@
 }
 
 .card {
-    border: 2px solid black;
+    border: 2px solid rgb(255, 183, 49);
     width: calc(25% - 20px); /* 25% width with margin for medium screens */
     margin: 10px;
     background-color: #f0f0f0;
@@ -59,10 +59,9 @@
     margin-top: 10px; /* Add margin between title and content */
 }
 
-/* Stack cards vertically on small screens */
-@media screen and (max-width: 600px) {
-    .card {
-        width: calc(100% - 20px); /* 100% width with margin for small screens */
-        margin: 10px 0; /* Adjust margin to separate cards vertically */
-    }
+/* Style anchor tag */
+.card .card-header a {
+    display: flex;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
 }
